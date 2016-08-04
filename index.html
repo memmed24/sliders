@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<section id="banner">
+		<!-- 750px -->
+		<div id = "top">
+			<p id="first">IMAGE</p>
+			<h4 id="h4">1970x750</h4>
+		</div>
+		<div id="leftArrow" onclick="prev()">
+			<a class="fa fa-arrow-left" aria-hidden="true"></a>
+		</div>
+		<div id="rightArrow" onclick="next()">
+			<a class="fa fa-arrow-right" aria-hidden="true"></a>
+		</div>
+		<div id="center">
+			<p id="second">BOOST UP YOUR </p>
+			<h4 id="h3">LOCAL BUSINESS</h4>
+			<button>CONTACT US
+			<!-- 141 51 -->
+			</button>
+		</div>
+	</section>
+	<!-- slider which works with button -->
+	<script>
+		
+		text = ["IMAGE","Shekil", "Foto", "Picture"];
+		size = ["1970x750", "1770x850", "1570x1000","1350x1150"]
+		myTexts = ["BOOST UP YOUR  LOCAL BUSINESS", "LMAO", "LMFAO", "LOOL"];
+		justTexts = ["LOCAL BUSINESS", "PUBLIC BUSINESS", "GLOBAL PROBLEMS","AHAHAHA"]
+
+		var myParagraph = document.getElementById("first");
+		var myH = document.getElementById("h4");
+		var texts = document.getElementById("second");
+		var jt = document.getElementById("h3");
+		myParagraph.innerHTML = text[0];
+		myH.innerHTML = size[0];
+		texts.innerHTML = myTexts[0];
+		jt.innerHTML = justTexts[0];
+
+		a = 0;
+
+		function next(){
+			a++;
+			if(a > 3){
+				a = 0;
+			}
+			myParagraph.innerHTML = text[a];
+			texts.innerHTML = myTexts[a];
+			myH.innerHTML = size[a];
+			jt.innerHTML = justTexts[a];
+			console.log(a);
+		}
+
+		function prev(){
+			a--;
+			if(a < 0){
+				a = 3;
+			}
+			myParagraph.innerHTML = text[a];	
+			texts.innerHTML = myTexts[a];
+			myH.innerHTML = size[0];
+			jt.innerHTML = justTexts[a];
+			console.log(a);
+		}
+	</script>
+	<section id="clients">
+		<!-- 616px -->
+		<p id="happy">HAPPY</p>
+		<h3>CLIENTS</h3>
+		<div id="circle">
+			<!-- <img src="assets/img/quote.jpg"> -->
+		</div>
+
+		<div id="text1">
+			<p id="some">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste necessitatibus repellat vel, quibusdam iusto voluptatem, at rerum nihil quasi!</p>
+			<!-- <img src="assets/img/1.jpg">
+			<img src="assets/img/2.jpg"> -->
+		</div>
+		<div id = "6">
+			
+		</div>
+	</section>
+	<!-- slider which works automatically with setInterval function -->
+	<script>
+		any = ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste necessitatibus repellat vel, quibusdam iusto voluptatem, at rerum nihil quasi!", "Created by memmed", "who's turned 18 in december", "anyway", "take care of yourself"];
+
+		var anyText = document.getElementById("some");
+		anyText.innerHTML = any[0];
+
+		say = 0;
+
+		function slide(){
+			
+			say++;
+			if(say>any.length-1){
+				say = 0;
+			}
+
+			anyText.innerHTML = any[say];
+		}
+		setInterval("slide()",5000);
+	</script>
+</body>
+</html>

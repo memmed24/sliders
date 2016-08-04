@@ -1,0 +1,92 @@
+body {
+  margin: 0px;
+  padding: 0px; }
+
+#banner {
+  background-color: #8d8d8d;
+  height: 750px;
+  text-align: center;
+  font-size: 28px; }
+  #banner #top p {
+    color: white;
+    margin: 0px;
+    padding-top: 108px; }
+  #banner #top h4 {
+    margin-top: 0px;
+    color: white; }
+  #banner #center p {
+    padding-top: 80px;
+    font-size: 18px;
+    color: white; }
+  #banner #center h4 {
+    color: white;
+    font-size: 45px;
+    letter-spacing: 3px;
+    margin-top: -10px; }
+  #banner #center button {
+    height: 51px;
+    color: white;
+    width: 141px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #29c2e1;
+    box-shadow: 10px 10px 55px gray;
+    transition: 250ms; }
+    #banner #center button:hover {
+      background-color: orange;
+      cursor: pointer; }
+  #banner #leftArrow {
+    height: 50px;
+    width: 50px;
+    background-color: #29c2e1;
+    border-radius: 50%;
+    margin-top: 13px;
+    margin-left: 410px;
+    position: absolute; }
+    #banner #leftArrow a {
+      font-size: 20px;
+      padding-top: 15px;
+      color: white; }
+    #banner #leftArrow:hover {
+      background-color: orange; }
+  #banner #rightArrow {
+    height: 50px;
+    width: 50px;
+    background-color: #29c2e1;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 900px; }
+    #banner #rightArrow a {
+      font-size: 20px;
+      padding-top: 15px;
+      color: white; }
+    #banner #rightArrow:hover {
+      background-color: orange; }
+
+#clients {
+  background-color: #F7941D;
+  text-align: center; }
+  #clients #happy {
+    margin: 0px;
+    margin-top: 97px;
+    color: white;
+    background-color: black;
+    display: inline-block; }
+  #clients h3 {
+    margin-top: -1px;
+    font-size: 25px; }
+  #clients #circle {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-left: calc(50% - 24px); }
+  #clients #text1 {
+    width: 1000px;
+    font-size: 17.5px; }
+    #clients #text1 p {
+      padding-top: 10px;
+      margin: 0px;
+      padding-left: 350px; }
+
+/*# sourceMappingURL=style.css.map */
